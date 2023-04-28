@@ -1,16 +1,14 @@
 const fs = require('fs');
 
-const { Client, GatewayIntentBits } = require('discord.js');
-
-const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-    ],
+const Discord = require('discord.js');
+const client = new Discord.Client({
+  intents: ['GUILDS', 'GUILD_MESSAGES'],
 });
+const token = process.env['DISCORDBOT'];
 
 client.once('ready', () => {
     console.log('Ready!');
+    console.log(client.user.username);
 });
 
 client.on('ready', () => {
@@ -56,4 +54,4 @@ async function postDailyMotivation() {
     }
 }
 
-client.login(process.env.TOKEN);
+client.login(token);
