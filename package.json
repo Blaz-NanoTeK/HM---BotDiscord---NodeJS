@@ -1,0 +1,20 @@
+{
+  "name": "botdiscord-hm",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "Je sais pas quoi dire pour le moment"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "happiness",
+    "manager"
+  ],
+  "author": "Blaztek le steak",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "discord.js": "^14.9.0"
+  }
+}
