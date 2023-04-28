@@ -4,6 +4,7 @@
   "description": "Description",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "Je sais pas quoi dire pour le moment"
   },
   "keywords": [
